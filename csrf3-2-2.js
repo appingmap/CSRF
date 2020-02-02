@@ -9,7 +9,7 @@ if (window.XMLHttpRequest){
 }
 xmlHttp.withCredentials = true;
 var hacked = false;
-xmlhttp.onreadystatechange = function(){
+xmlHttp.onreadystatechange = function(){
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
         var text = xmlHttp.responseText;
         var parser = new DOMParser();
